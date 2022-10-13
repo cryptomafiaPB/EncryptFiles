@@ -20,9 +20,11 @@ with open("thekey.key", "rb") as key:
 
 #setting up kinda like password to run the decrypt.py script
 
-password = "NOOB"
+hashpass = " 7*"
 i = input("Enter a password loser: ")
-if i == password:
+key = "X"
+result = "".join([chr(ord(x)^ord(key)) for x in hashpass])
+if i == result:
 	# here, we are opening every single file in this directry and read it and decrypting it and saving it.
 	for file in files:
 		with open(file, "rb") as rf:
